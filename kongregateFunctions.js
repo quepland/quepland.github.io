@@ -38,13 +38,16 @@
     },
     purchasePet: function (petIdentifier) {
         window.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
+        console.log("Purchase Requested");
     },
     onPurchaseResult: function (result) {
         if (result.success == true) {
-            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');
+            console.log("Purchase Successful");
+            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
         }
         else {
-            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');
+            console.log("Purchase Failed");
+            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
         }
         
     },
