@@ -37,8 +37,9 @@
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
     purchasePet: function (petIdentifier) {
-        window.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
         console.log("Purchase Requested");
+        window.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
+        
     },
     onPurchaseResult: function (result) {
         if (result.success == true) {
