@@ -40,8 +40,6 @@
         console.log("Purchase requested for" + petIdentifier);
         window.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
         console.log("Post Purchase Requested");
-        window.kongregate.
-        
     },
     onPurchaseResult: function (result) {
         if (result.success == true) {
