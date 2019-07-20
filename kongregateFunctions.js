@@ -37,6 +37,7 @@
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
     purchasePet: function (petIdentifier) {
+        window.addEventListener("message", receiveMessage, false);
         window.postMessage("hello there!", "https://quepland.github.io");
         //console.log("Purchase requested for " + petIdentifier);
         //window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
@@ -58,7 +59,7 @@
 {
     // Do we trust the sender of this message?
         // different from what we originally opened, for example).
-        if (event.origin != "https://kongregate.com/") {
+        if (event.origin != "https://quepland.github.io") {
             console.log("Failed, origin:" + event.origin);
             return;
         }
