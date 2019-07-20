@@ -37,7 +37,7 @@
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
     purchasePet: function (petIdentifier) {
-        window.postMessage("hello there!", "https://www.kongregate.com/games/billybillyjim/");
+        window.postMessage("hello there!", "https://quepland.github.io");
         //console.log("Purchase requested for " + petIdentifier);
         //window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
         //console.log("Post Purchase Requested");
