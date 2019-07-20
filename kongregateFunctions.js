@@ -48,15 +48,15 @@
     },
 
     onPurchaseResult: function (result) {
-        console.log("Callback");
-        /*if (result.success == true) {
+        
+        if (result.success == true) {
             console.log("Purchase Successful");
-            //DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
+            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
         }
         else {
             console.log("Purchase Failed");
-            //DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
-        }*/
+            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
+        }
         
     },
     createSortableList: function (listElement) {
