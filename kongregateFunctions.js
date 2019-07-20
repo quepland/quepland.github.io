@@ -37,7 +37,7 @@
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
     purchasePet: function (petIdentifier) {
-        window.addEventListener("message", receiveMessage, false);
+        addEventListener("message", receiveMessage, false);
         window.postMessage("hello there!", "https://quepland.github.io");
         //console.log("Purchase requested for " + petIdentifier);
         //window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
