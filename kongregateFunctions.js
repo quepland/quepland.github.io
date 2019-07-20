@@ -38,7 +38,7 @@
     },
     purchasePet: function (petIdentifier) {
         console.log("Purchase requested for" + petIdentifier);
-        window.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
+        kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
         console.log("Post Purchase Requested");
     },
     onPurchaseResult: function (result) {
