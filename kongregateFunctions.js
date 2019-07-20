@@ -37,20 +37,20 @@
     },
     purchasePet: function (petIdentifier) {               
         console.log("Purchase requested for " + petIdentifier);
-        window.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
+        window.kongregate.mtx.purchaseItems([petIdentifier], this.onPurchaseResult);
         console.log("Post Purchase Requested");
     },
 
     onPurchaseResult: function (result) {
         if (result.success == true) {
             console.log("Purchase Successful");
-            window.postMessage("success", "https://quepland.github.io");
-            //DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
+            //window.postMessage("success", "https://quepland.github.io");
+            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
         }
         else {
             console.log("Purchase Failed");
-            window.postMessage("failure", "https://quepland.github.io");
-            //DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
+            //window.postMessage("failure", "https://quepland.github.io");
+            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
         }
         
     },
