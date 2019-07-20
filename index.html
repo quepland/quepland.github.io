@@ -97,7 +97,7 @@
                     }
             console.log(event.data);
             if (event.data == "success") {
-                DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');  
+                setTimeout(DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong'), 5000);  
             }
             
 }
