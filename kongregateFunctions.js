@@ -1,5 +1,4 @@
 ﻿window.kongregateFunctions = {
-    
     getUsername: function () {
         // You can now access the Kongregate API with:
         // kongregate.services.getUsername(), etc
@@ -36,22 +35,22 @@
     updateTotalKills: function (totalKills) {
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
-    purchasePet: function (petIdentifier) {
-        addEventListener("message", receiveMessage, false);
-        window.postMessage("hello there!", "https://quepland.github.io");
-        //console.log("Purchase requested for " + petIdentifier);
-        //window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
-        //console.log("Post Purchase Requested");
+    purchasePet: function (petIdentifier) {               
+        console.log("Purchase requested for " + petIdentifier);
+        window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
+        console.log("Post Purchase Requested");
     },
 
     onPurchaseResult: function (result) {
         if (result.success == true) {
             console.log("Purchase Successful");
-            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
+            window.postMessage("success", "https://quepland.github.io");
+            //DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
         }
         else {
             console.log("Purchase Failed");
-            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
+            window.postMessage("failure", "https://quepland.github.io");
+            //DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
         }
         
     },
