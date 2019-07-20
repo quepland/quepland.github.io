@@ -37,9 +37,10 @@
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
     purchasePet: function (petIdentifier) {
-        console.log("Purchase requested for " + petIdentifier);
-        window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
-        console.log("Post Purchase Requested");
+        window.postMessage("hello there!", "https://www.kongregate.com/games/billybillyjim/");
+        //console.log("Purchase requested for " + petIdentifier);
+        //window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
+        //console.log("Post Purchase Requested");
     },
     onPurchaseResult: function (result) {
         if (result.success == true) {
