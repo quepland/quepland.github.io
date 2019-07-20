@@ -42,14 +42,15 @@
     },
 
     onPurchaseResult: function (result) {
-        if (result.success == true) {
+        console.log(result);
+        /*if (result.success == true) {
             console.log("Purchase Successful");
             //DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
         }
         else {
             console.log("Purchase Failed");
             //DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
-        }
+        }*/
         
     },
     receiveMessage:function(event)
