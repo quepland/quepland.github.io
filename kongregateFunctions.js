@@ -37,12 +37,18 @@
     },
     purchasePet: function (petIdentifier) {               
         console.log("Purchase requested for " + petIdentifier);
-        window.kongregate.mtx.purchaseItems([petIdentifier], this.onPurchaseResult);
-        console.log("Post Purchase Requested");
+        if (kongregate.services.isGuest() == false) {
+            window.kongregate.mtx.purchaseItems([petIdentifier], this.onPurchaseResult);
+            console.log("Post Purchase Requested");
+        }
+        else {
+            console.log("Is guest.");
+        }
+        
     },
 
     onPurchaseResult: function (result) {
-        console.log(result);
+        console.log("Callback");
         /*if (result.success == true) {
             console.log("Purchase Successful");
             //DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
@@ -53,23 +59,6 @@
         }*/
         
     },
-    receiveMessage:function(event)
-{
-    // Do we trust the sender of this message?
-        // different from what we originally opened, for example).
-        if (event.origin != "https://quepland.github.io") {
-            console.log("Failed, origin:" + event.origin);
-            return;
-        }
-    // event.source is window.opener
-    // event.data is "hello there!"
-
-    // Assuming you've verified the origin of the received message (which
-    // you must do in any case), a convenient idiom for replying to a
-    // message is to call postMessage on event.source and provide
-    // event.origin as the targetOrigin.
-        console.log(event.origin + ", success");
-},
     createSortableList: function (listElement) {
         Sortable.create(listElement, {
             group: "localStorage-example",
