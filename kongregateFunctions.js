@@ -44,13 +44,11 @@
     onPurchaseResult: function (result) {
         if (result.success == true) {
             console.log("Purchase Successful");
-            //window.postMessage("success", "https://quepland.github.io");
-            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
+            //DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
         }
         else {
             console.log("Purchase Failed");
-            //window.postMessage("failure", "https://quepland.github.io");
-            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
+            //DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
         }
         
     },
