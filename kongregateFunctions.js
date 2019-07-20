@@ -1,4 +1,5 @@
 ﻿window.kongregateFunctions = {
+    var dotNet;
     getUsername: function () {
         // You can now access the Kongregate API with:
         // kongregate.services.getUsername(), etc
@@ -35,9 +36,10 @@
     updateTotalKills: function (totalKills) {
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
-    purchasePet: function (petIdentifier) {               
-        console.log("Purchase requested for " + petIdentifier);
+    purchasePet: function (petIdentifier, dotNetInstance) {               
+        console.log("Purchase requested for " + petIdentifier);   
         if (kongregate.services.isGuest() == false) {
+            dotNet = dotNetInstance;
             window.kongregate.mtx.purchaseItems([petIdentifier], window.kongregateFunctions.onPurchaseResult);
             console.log("Post Purchase Requested");
         }
@@ -51,11 +53,11 @@
         
         if (result.success == true) {
             console.log("Purchase Successful");
-            DotNet.invokeMethodAsync('Quepland', 'BuyPetFromKong');         
+            dotNet.invokeMethodAsync('PurchasePet');         
         }
         else {
             console.log("Purchase Failed");
-            DotNet.invokeMethodAsync('Quepland', 'CancelBuyPetFromKong');         
+            dotNet.invokeMethodAsync('CancelPurchase');     
         }
         
     },
