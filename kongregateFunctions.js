@@ -38,7 +38,7 @@
     purchasePet: function (petIdentifier) {               
         console.log("Purchase requested for " + petIdentifier);
         if (kongregate.services.isGuest() == false) {
-            window.kongregate.mtx.purchaseItems([petIdentifier], this.onPurchaseResult);
+            window.kongregate.mtx.purchaseItems([petIdentifier], window.kongregateFunctions.onPurchaseResult);
             console.log("Post Purchase Requested");
         }
         else {
