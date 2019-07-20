@@ -42,6 +42,7 @@
         //window.parent.kongregate.mtx.purchaseItems([petIdentifier], onPurchaseResult);
         //console.log("Post Purchase Requested");
     },
+
     onPurchaseResult: function (result) {
         if (result.success == true) {
             console.log("Purchase Successful");
@@ -53,6 +54,22 @@
         }
         
     },
+    receiveMessage:function(event)
+{
+    // Do we trust the sender of this message?
+        // different from what we originally opened, for example).
+        if (event.origin != "https://kongregate.com/")
+            return;
+
+    // event.source is window.opener
+    // event.data is "hello there!"
+
+    // Assuming you've verified the origin of the received message (which
+    // you must do in any case), a convenient idiom for replying to a
+    // message is to call postMessage on event.source and provide
+    // event.origin as the targetOrigin.
+
+},
     createSortableList: function (listElement) {
         Sortable.create(listElement, {
             group: "localStorage-example",
