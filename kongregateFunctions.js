@@ -61,7 +61,7 @@
     restorePurchases: function (dotNetInstance) {
         if (kongregate.services.isGuest() == false) {
             window.dotNet = dotNetInstance;
-            window.kongregate.mtx.requestUserItemList("", this.onRestorePurchasesResult);
+            window.kongregate.mtx.requestUserItemList("", window.kongregateFunctions.onRestorePurchasesResult);
         }
     },
     onRestorePurchasesResult: function (result) {
