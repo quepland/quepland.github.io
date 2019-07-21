@@ -1,5 +1,5 @@
 ﻿window.kongregateFunctions = {
-    var dotNet;
+    
     getUsername: function () {
         // You can now access the Kongregate API with:
         // kongregate.services.getUsername(), etc
@@ -39,7 +39,7 @@
     purchasePet: function (petIdentifier, dotNetInstance) {               
         console.log("Purchase requested for " + petIdentifier);   
         if (kongregate.services.isGuest() == false) {
-            dotNet = dotNetInstance;
+            window.dotNet = dotNetInstance;
             window.kongregate.mtx.purchaseItems([petIdentifier], window.kongregateFunctions.onPurchaseResult);
             console.log("Post Purchase Requested");
         }
@@ -53,11 +53,11 @@
         
         if (result.success == true) {
             console.log("Purchase Successful");
-            dotNet.invokeMethodAsync('PurchasePet');         
+            window.dotNet.invokeMethodAsync('PurchasePet');         
         }
         else {
             console.log("Purchase Failed");
-            dotNet.invokeMethodAsync('CancelPurchase');     
+            window.dotNet.invokeMethodAsync('CancelPurchase');     
         }
         
     },
