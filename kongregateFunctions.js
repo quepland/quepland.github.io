@@ -68,7 +68,7 @@
         if (result.success) {
             for (var i = 0; i < result.data.length; i++) {
                 var item = result.data[i];
-                window.dotNet.invokeMethodAsync('RestorePurchase', item.identifier);
+                window.dotNet.invokeMethodAsync('RestorePurchases', item.identifier);
             }            
         }
     },
