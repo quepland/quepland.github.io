@@ -37,11 +37,11 @@
         window.kongregate.stats.submit("Total Kills", totalKills);
     },
     purchasePet: function (petIdentifier, dotNetInstance) {               
-        console.log("Purchase requested for " + petIdentifier);   
+
         if (kongregate.services.isGuest() == false) {
             window.dotNet = dotNetInstance;
             window.kongregate.mtx.purchaseItems([petIdentifier], window.kongregateFunctions.onPurchaseResult);
-            console.log("Post Purchase Requested");
+
         }
         else {
             console.log("Is guest.");
@@ -49,17 +49,28 @@
         
     },
 
-    onPurchaseResult: function (result) {
-        
+    onPurchaseResult: function (result) {      
         if (result.success == true) {
-            console.log("Purchase Successful");
             window.dotNet.invokeMethodAsync('PurchasePet');         
         }
         else {
-            console.log("Purchase Failed");
             window.dotNet.invokeMethodAsync('CancelPurchase');     
         }
         
+    },
+    restorePurchases: function (dotNetInstance) {
+        if (kongregate.services.isGuest() == false) {
+            window.dotNet = dotNetInstance;
+            window.kongregate.mtx.requestUserItemList("", this.onRestorePurchasesResult);
+        }
+    },
+    onRestorePurchasesResult: function (result) {
+        if (result.success) {
+            for (var i = 0; i < result.data.length; i++) {
+                var item = result.data[i];
+                window.dotNet.invokeMethodAsync('RestorePurchase', item.identifier);
+            }            
+        }
     },
     createSortableList: function (listElement) {
         Sortable.create(listElement, {
