@@ -822,7 +822,7 @@
     "areaURL": "SahotaTir",
     "description": "An icy region of Caligin.",
     "icon": "oi oi-chevron-bottom",
-    "children": [ "SahotaIceFields" ],
+    "children": [ "SahotaIceFields", "SahotaCaverns" ],
     "region": "Caligin Commonwealth"
   },
   {
@@ -836,15 +836,16 @@
     "areaToUnlockOnArrival": "Sahota Tir",
     "region": "Caligin Commonwealth",
     "monsterIDs": [ 40, 41, 42, 43, 44 ],
-    "npcIDs": [ 37, 64 ]
+    "npcIDs": [ 37, 64 ],
+    "unlockableAreas": [ "Sahota Caverns,Climb into the cave walls,,"]
   },
   {
     "name": "Sahota Caverns",
     "id": 74,
     "areaURL": "SahotaCaverns",
-    "description": "A series of tunnels that weave around the walls of the ice fields.",
+    "description": "A series of tunnels that weave around the walls of the ice fields. There's water beneath your feet, and here and there you find holes large enough to fish from.",
     "icon": "oi oi-random",
-    "actions": [ "Hunting" ],
+    "actions": [ "Hunting", "Bait Fishing" ],
     "region": "Caligin Commonwealth",
     "huntingIDs": [ 71, 67, 69 ]
 
