@@ -249,7 +249,7 @@
     "name": "Swampland",
     "id": 22,
     "isUnlocked": false,
-    "description": "You enter an enourmous swamp. Trees entangle an overgrowth immersed in water. Rice grows wild here. Ahead you see a dark wooded region.",
+    "description": "You enter an enormous swamp. Trees entangle an overgrowth immersed in water. Rice grows wild here. Ahead you see a dark wooded region.",
     "areaURL": "Swampland",
     "icon": "oi oi-inbox",
     "actions": [ "Gather Rice:Rice", "Chop Snakewood Trees:Snakewood Logs", "Hunting" ],
@@ -262,7 +262,7 @@
     "name": "The Great Swamp",
     "id": 23,
     "isUnlocked": false,
-    "description": "You enter an enourmous swamp. Trees entangle an overgrowth immersed in water. Rice grows wild here.",
+    "description": "You enter an enormous swamp. Trees entangle an overgrowth immersed in water. Rice grows wild here.",
     "areaURL": "GreatSwamp",
     "icon": "oi oi-inbox",
     "children": [ "Swampland", "Swampwood", "StrangeOldHut", "Swamplake" ],
@@ -829,7 +829,7 @@
     "name": "Sahota Ice Fields",
     "id": 73,
     "areaURL": "SahotaIceFields",
-    "description": "A cavern of ice that extends as far as the eye can see. Frosty creatures roam the plain, and the walls are solid ice that may be extractable.",
+    "description": "A cavern of ice that extends as far as the eye can see. Frosty creatures roam the plain, and the walls are solid ice that may be extractable. There is an entrance to a cave system, blocked by overgrown roots that have frozen solid.",
     "icon": "oi oi-chevron-bottom",
     "actions": [ "Mine Ice:Ice Block", "Battle", "Chop Ice Trees:Ice Logs" ],
     "accessibleRegions": "Quepland,Mt Yama Mine,Climb up to the surface",
@@ -837,7 +837,7 @@
     "region": "Caligin Commonwealth",
     "monsterIDs": [ 40, 41, 42, 43, 44 ],
     "npcIDs": [ 37, 64 ],
-    "unlockableAreas": [ "Sahota Caverns,Climb into the cave walls,,"]
+    "unlockableAreas": [ "Sahota Caverns,Chop the frozen roots,Woodcutting:75,", "Sahota Caverns,Hack away the frozen roots,Axemanship:75," ]
   },
   {
     "name": "Sahota Caverns",
@@ -847,7 +847,7 @@
     "icon": "oi oi-random",
     "actions": [ "Hunting", "Bait Fishing" ],
     "region": "Caligin Commonwealth",
-    "huntingIDs": [ 71, 67, 69 ]
+    "huntingIDs": [ 71, 67, 69, 434 ]
 
   } 
 

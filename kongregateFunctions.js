@@ -30,6 +30,14 @@
             return window.kongregate.services.getGameAuthToken();
         }
     },
+    showRegistration: function (dotNetInstance) {
+        window.dotNet = dotNetInstance;
+        window.kongregate.services.showRegistrationBox();
+        window.kongregate.services.addEventListener("login", window.kongregateFunctions.onKongregatePageLogin);
+    },
+    onKongregatePageLogin: function () {
+        window.dotNet.invokeMethodAsync('RefreshUI');
+    },
     updateTotalLevelScore: function (totalLevel) {
         window.kongregate.stats.submit("Total Level", totalLevel);
     },
