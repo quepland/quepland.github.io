@@ -6290,7 +6290,7 @@
     "id": 427,
     "itemDescription": "The only squid that makes the giant squid look like the small squid.",
     "value": 3800,
-    "gatherString": "You catch a halibut.",
+    "gatherString": "You catch a huge squid.",
     "gatherSpeed": 40000,
     "requiredLevel": 110,
     "experienceGained": "Fishing:5000",
