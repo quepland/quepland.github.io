@@ -24,21 +24,21 @@
     "name": "Snake",
     "description": "The Snake is a slippery companion. She'll help you improve in your skills exceptionally quickly. Her natural talent is in Deftness, as her whole body is one long muscle.",
     "cost": 250000,
-    "minLevel": 15,
+    "minLevel": 20,
     "affinity": "Deftness"
   },
   {
     "name": "Fairy",
     "description": "The Fairy is a friendly companion. He's not afraid to let you know when you need to listen. His advice will help you improve in your skills exceptionally quickly. He is a natural at flying, which you are unable to do, but he's also good at Hammermanship because his father was a hammerman. ",
     "cost": 250000,
-    "minLevel": 15,
+    "minLevel": 20,
     "affinity": "Hammermanship"
   },
   {
     "name": "Raven",
     "description": "The Raven is an aloof companion. She's exceptionally wise, and her wisdom will ensure you grow in your skills exceptionally quickly. She is a natural hunter and will improve in that skill faster than any other.",
     "cost": 250000,
-    "minLevel": 15,
+    "minLevel": 20,
     "affinity": "Hunting"
   },
   {

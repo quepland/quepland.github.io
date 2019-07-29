@@ -1066,7 +1066,8 @@
     "id": 85,
     "icon": "Pelt",
     "isTannable": true,
-    "value": 700
+    "value": 700,
+    "requiredLevel": 91
   },
   {
     "itemName": "Wild Boar Meat",
@@ -1083,7 +1084,8 @@
     "id": 87,
     "value": 325,
     "isTannable": true,
-    "icon": "Pelt"
+    "icon": "Pelt",
+    "requiredLevel": 43
   },
   {
     "itemName": "Wild Boar Tusk",
@@ -6827,7 +6829,7 @@
     "experienceGained": "Hunting:8000",
     "icon": "Deer"
   },
-    {
+  {
     "itemName": "Polar Bear Clawed Gloves",
     "id": 463,
     "value": 55000,
@@ -6843,4 +6845,232 @@
     "actionRequired": "Leatherworking",
     "gatherSpeed": 4500
   },
+  {
+    "itemName": "Rough Small Emerald",
+    "itemDescription": "A small uncut emerald.",
+    "id": 464,
+    "value": 500,
+    "actionRequired": "Mining",
+    "gatherSpeed": 10000,
+    "requiredLevel": 97,
+    "experienceGained": "Mining:500",
+    "gatherString": "You mine a small emerald.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Emerald",
+    "itemDescription": "An uncut emerald.",
+    "id": 465,
+    "value": 750,
+    "actionRequired": "Mining",
+    "gatherSpeed": 15000,
+    "requiredLevel": 97,
+    "experienceGained": "Mining:750",
+    "gatherString": "You mine an emerald.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Large Emerald",
+    "itemDescription": "A large uncut emerald.",
+    "id": 466,
+    "value": 1080,
+    "actionRequired": "Mining",
+    "gatherSpeed": 20000,
+    "requiredLevel": 97,
+    "experienceGained": "Mining:1000",
+    "gatherString": "You mine a large emerald.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Small Topaz",
+    "itemDescription": "A small uncut topaz.",
+    "id": 467,
+    "value": 600,
+    "actionRequired": "Mining",
+    "gatherSpeed": 13000,
+    "requiredLevel": 101,
+    "experienceGained": "Mining:700",
+    "gatherString": "You mine a small topaz.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Topaz",
+    "itemDescription": "An uncut topaz.",
+    "id": 468,
+    "value": 825,
+    "actionRequired": "Mining",
+    "gatherSpeed": 17000,
+    "requiredLevel": 101,
+    "experienceGained": "Mining:950",
+    "gatherString": "You mine a topaz.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Large Topaz",
+    "itemDescription": "A large uncut topaz.",
+    "id": 469,
+    "value": 1275,
+    "actionRequired": "Mining",
+    "gatherSpeed": 24000,
+    "requiredLevel": 101,
+    "experienceGained": "Mining:1300",
+    "gatherString": "You mine a large topaz.",
+    "icon": "Ore"
+  },
+    {
+    "itemName": "Rough Small Chrysoberyl",
+    "itemDescription": "A small uncut chrysoberyl.",
+    "id": 470,
+    "value": 750,
+    "actionRequired": "Mining",
+    "gatherSpeed": 16000,
+    "requiredLevel": 105,
+    "experienceGained": "Mining:700",
+    "gatherString": "You mine a small topaz.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Chrysoberyl",
+    "itemDescription": "An uncut chrysoberyl.",
+    "id": 471,
+    "value": 1050,
+    "actionRequired": "Mining",
+    "gatherSpeed": 21000,
+    "requiredLevel": 105,
+    "experienceGained": "Mining:950",
+    "gatherString": "You mine a chrysoberyl.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Large Chrysoberyl",
+    "itemDescription": "A large uncut chrysoberyl.",
+    "id": 472,
+    "value": 1500,
+    "actionRequired": "Mining",
+    "gatherSpeed": 25000,
+    "requiredLevel": 105,
+    "experienceGained": "Mining:1300",
+    "gatherString": "You mine a large chrysoberyl.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Small Sapphire",
+    "itemDescription": "A small uncut sapphire.",
+    "id": 473,
+    "value": 1200,
+    "actionRequired": "Mining",
+    "gatherSpeed": 20000,
+    "requiredLevel": 109,
+    "experienceGained": "Mining:700",
+    "gatherString": "You mine a small sapphire.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Sapphire",
+    "itemDescription": "An uncut topaz.",
+    "id": 474,
+    "value": 1650,
+    "actionRequired": "Mining",
+    "gatherSpeed": 24000,
+    "requiredLevel": 109,
+    "experienceGained": "Mining:950",
+    "gatherString": "You mine a sapphire.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Large Sapphire",
+    "itemDescription": "A large uncut sapphire.",
+    "id": 475,
+    "value": 2250,
+    "actionRequired": "Mining",
+    "gatherSpeed": 30000,
+    "requiredLevel": 109,
+    "experienceGained": "Mining:1300",
+    "gatherString": "You mine a large sapphire.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Small Ruby",
+    "itemDescription": "A small uncut ruby.",
+    "id": 476,
+    "value": 1500,
+    "actionRequired": "Mining",
+    "gatherSpeed": 23000,
+    "requiredLevel": 115,
+    "experienceGained": "Mining:700",
+    "gatherString": "You mine a small ruby.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Ruby",
+    "itemDescription": "An uncut ruby.",
+    "id": 477,
+    "value": 1950,
+    "actionRequired": "Mining",
+    "gatherSpeed": 27000,
+    "requiredLevel": 115,
+    "experienceGained": "Mining:950",
+    "gatherString": "You mine a ruby.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Large Ruby",
+    "itemDescription": "A large uncut ruby.",
+    "id": 478,
+    "value": 2700,
+    "actionRequired": "Mining",
+    "gatherSpeed": 33000,
+    "requiredLevel": 115,
+    "experienceGained": "Mining:1300",
+    "gatherString": "You mine a large ruby.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Small Diamond",
+    "itemDescription": "A small uncut diamond.",
+    "id": 479,
+    "value": 2700,
+    "actionRequired": "Mining",
+    "gatherSpeed": 25000,
+    "requiredLevel": 119,
+    "experienceGained": "Mining:700",
+    "gatherString": "You mine a small diamond.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Diamond",
+    "itemDescription": "An uncut diamond.",
+    "id": 480,
+    "value": 3750,
+    "actionRequired": "Mining",
+    "gatherSpeed": 31000,
+    "requiredLevel": 119,
+    "experienceGained": "Mining:950",
+    "gatherString": "You mine a diamond.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Rough Large Diamond",
+    "itemDescription": "A large uncut diamond.",
+    "id": 481,
+    "value": 5000,
+    "actionRequired": "Mining",
+    "gatherSpeed": 35000,
+    "requiredLevel": 119,
+    "experienceGained": "Mining:1300",
+    "gatherString": "You mine a large diamond.",
+    "icon": "Ore"
+  },
+  {
+    "itemName": "Cave Rock",
+    "itemDescription": "A bit of rubble.",
+    "id": 482,
+    "value": 20,
+    "actionRequired": "Mining",
+    "gatherSpeed": 5000,
+    "requiredLevel": 97,
+    "experienceGained": "Mining:25",
+    "gatherString": "You mine some cave wall.",
+    "icon": "Ore"
+  }
 ]
