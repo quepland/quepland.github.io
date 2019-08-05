@@ -7072,5 +7072,13 @@
     "experienceGained": "Mining:25",
     "gatherString": "You mine some cave wall.",
     "icon": "Ore"
+  },
+  {
+    "itemName": "Coin Voucher",
+    "itemDescription": "Substitute money for the wealthiest of us.",
+    "id": 483,
+    "value": 100000000,
+    "isStackable": true,
+    "icon": "Gold"
   }
 ]

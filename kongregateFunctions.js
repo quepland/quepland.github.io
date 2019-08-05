@@ -49,7 +49,6 @@
         if (kongregate.services.isGuest() == false) {
             window.dotNet = dotNetInstance;
             window.kongregate.mtx.purchaseItems([petIdentifier], window.kongregateFunctions.onPurchaseResult);
-
         }
         else {
             console.log("Is guest.");
@@ -59,7 +58,7 @@
 
     onPurchaseResult: function (result) {      
         if (result.success == true) {
-            window.dotNet.invokeMethodAsync('PurchasePet');         
+            window.dotNet.invokeMethodAsync('PurchasePet');    
         }
         else {
             window.dotNet.invokeMethodAsync('CancelPurchase');     
@@ -77,7 +76,7 @@
             for (var i = 0; i < result.data.length; i++) {
                 var item = result.data[i];
                 window.dotNet.invokeMethodAsync('RestorePurchases', item.identifier);
-            }            
+            }      
         }
     },
     createSortableList: function (listElement) {
